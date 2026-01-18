@@ -97,14 +97,12 @@ public class String1 {
         return str.substring(index, index +2);
     }
 
-    //?????????????????
     public String lastChars(String a, String b) {
         char first = a.length() == 0 ? '@' : a.charAt(0);
         char last  = b.length() == 0 ? '@' : b.charAt(b.length() - 1);
         return "" + first + last;
     }
 
-    //?????????????????
     public String startWord(String str, String word) {
         if (str.length() < word.length()) {
             return "";
@@ -115,13 +113,11 @@ public class String1 {
         return "";
     }
 
-    //????????????????????
     public String extraEnd(String str) {
         String lastTwo = str.substring(str.length() - 2);
         return lastTwo + lastTwo + lastTwo;
     }
 
-    //???????????????????????
     public String withoutEnd(String str) {
         return str.substring(1, str.length() - 1);
     }
@@ -129,8 +125,5 @@ public class String1 {
     public String left2(String str) {
         return str.substring(2) + str.substring(0, 2);
     }
-
-
-
 
 }
